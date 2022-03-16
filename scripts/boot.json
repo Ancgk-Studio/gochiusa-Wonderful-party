@@ -1,0 +1,86 @@
+{
+	"play": [{
+		"name": "title",
+		"jump": "no",
+		"operation": "no",
+		"next-hop": "theme",
+		"in-transition": [{
+			"mode": "fade",
+			"type": "block",
+			"sync": "no",
+			"time": 1000,
+			"cover": "all",
+			"direction": "all",
+			"color": "#000000",
+			"bg": "rgba(0, 0, 0, 0)"
+		}],
+		"out-transition": [{
+			"mode": "fade",
+			"type": "block",
+			"sync": "no",
+			"time": 1000,
+			"cover": "all",
+			"direction": "all",
+			"color": "#000000",
+			"bg": "rgba(0, 0, 0, 0)"
+		}],
+		"bgm": {
+			"mode": "stop",
+			"sleep": 2000,
+			"src": "sound/title/jingle_01"
+		},
+		"back": {
+			"type": "image",
+			"sleep": 2000,
+			"src": "image/background/day_base",
+			"w": 960,
+			"h": 544,
+			"x": 0,
+			"y": 0
+		},
+		"sprite": {
+			"sleep": 1500,
+			"sync": "no",
+			"in-transition": [{
+				"mode": "wipe",
+				"type": "image",
+				"time": 1500,
+				"cover": "mask",
+				"direction": "right",
+				"src": "image/src/wipe_slaid_left"
+			}],
+			"src": [{
+					"type": "role",
+					"src": "image/role/wildgeese/wildgeese_fa415666a80aea5c3f8532fe9152fe63",
+					"block": "role",
+					"w": 119,
+					"h": 174,
+					"x": 420,
+					"y": 53
+				},
+				{
+					"type": "text",
+					"font": "FZRuiSYJW",
+					"size": 56,
+					"stroke_size": 3,
+					"color": "#600000",
+					"stroke": "#700000",
+					"text": "灰姑娘和午后的时间",
+					"x": 233,
+					"y": 290
+				},
+				{
+					"type": "text",
+					"font": "FZRuiSYJW",
+					"size": 45,
+					"stroke_size": 2,
+					"color": "#600000",
+					"stroke": "#700000",
+					"text": "— 第１章 —",
+					"x": 349,
+					"y": 345
+				}
+			]
+		}
+	}]
+}

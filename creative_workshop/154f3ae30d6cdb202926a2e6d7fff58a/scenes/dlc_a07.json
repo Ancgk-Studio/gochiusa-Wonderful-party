@@ -1,0 +1,747 @@
+{
+	"uuid": "D884F269-ADD8-4098-9944-EE24D7375C36",
+	"name": "dlc_a07",
+	"version": "2022-01-23",
+	"describe": "DLC第七部分",
+	"story": {
+		"main_01": {
+			"type": "renderer",
+			"label": ["log"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*main_02"
+			},
+			"dialog": {
+				"title": "@common#Rt38581044",
+				"text": "#Xk66334220",
+				"sleep": 800,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_02",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "dlc",
+				"res": "cc000093",
+				"sleep": 300
+			}],
+			"scene": [{
+					"type": "block",
+					"sleep": 0,
+					"res": "#000000",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "image",
+					"sleep": 0,
+					"path": "backgrounds",
+					"res": "bg01a",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/chino",
+					"res": "chino_090013",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 300, 100],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/chino",
+						"res": "chino_090013",
+						"block": ["eyes", 2, 5],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 3, 1],
+								["eyes", 3, 0],
+								["eyes", 2, 5],
+								["eyes", 3, 0],
+								["eyes", 3, 1]
+							]
+						}
+					}]
+				},
+				{
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_010021",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 470, 90],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["eyes", 2, 3],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [{
+								"sleep": 0,
+								"duration": 200,
+								"alpha": 0.0,
+								"rotate": 0,
+								"position": [0, 0, 0, 0]
+							}],
+							"end": []
+						},
+						"animation": {
+							"sleep": 1800,
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 1, 6],
+								["eyes", 1, 5],
+								["eyes", 1, 4],
+								["eyes", 1, 5],
+								["eyes", 1, 6]
+							]
+						}
+					}, {
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["eyes", 2, 3],
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [{
+								"sleep": 100,
+								"duration": 200,
+								"alpha": 1.0,
+								"rotate": 0,
+								"position": [0, 0, 0, 0]
+							}],
+							"end": []
+						},
+						"animation": {
+							"sleep": 1800,
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 2, 5],
+								["eyes", 2, 4],
+								["eyes", 2, 3],
+								["eyes", 2, 4],
+								["eyes", 2, 5]
+							]
+						}
+					}, {
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["mouth", 1, 1],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "mouth",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 0,
+							"plays": ["only"],
+							"cycle": [0],
+							"frame": [
+								["mouth", 0, 3]
+							]
+						}
+					}]
+				}
+			]
+		},
+		"main_02": {
+			"type": "renderer",
+			"label": ["log"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*main_03"
+			},
+			"dialog": {
+				"title": "@common#Fz96206568",
+				"text": "#Fx69602779",
+				"sleep": 800,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_02",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "dlc",
+				"res": "cn000036",
+				"sleep": 300
+			}],
+			"scene": [{
+					"type": "block",
+					"sleep": 0,
+					"res": "#000000",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "image",
+					"sleep": 0,
+					"path": "backgrounds",
+					"res": "bg01a",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/chino",
+					"res": "chino_090013",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 300, 100],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/chino",
+						"res": "chino_090013",
+						"block": ["eyes", 2, 5],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 3, 1],
+								["eyes", 3, 0],
+								["eyes", 2, 5],
+								["eyes", 3, 0],
+								["eyes", 3, 1]
+							]
+						}
+					}]
+				},
+				{
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_010021",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 470, 90],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["eyes", 2, 3],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 1800,
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 2, 5],
+								["eyes", 2, 4],
+								["eyes", 2, 3],
+								["eyes", 2, 4],
+								["eyes", 2, 5]
+							]
+						}
+					}, {
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["mouth", 1, 1],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "mouth",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 0,
+							"plays": ["only"],
+							"cycle": [0],
+							"frame": [
+								["mouth", 0, 3]
+							]
+						}
+					}]
+				}
+			]
+		},
+		"main_03": {
+			"type": "renderer",
+			"label": ["log"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*main_04"
+			},
+			"dialog": {
+				"title": "@common#Fz96206568",
+				"text": "#Al55073175",
+				"sleep": 800,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_02",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "dlc",
+				"res": "cn000037",
+				"sleep": 300
+			}],
+			"scene": [{
+					"type": "block",
+					"sleep": 0,
+					"res": "#000000",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "image",
+					"sleep": 0,
+					"path": "backgrounds",
+					"res": "bg01a",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/chino",
+					"res": "chino_090013",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 300, 100],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/chino",
+						"res": "chino_090013",
+						"block": ["eyes", 2, 5],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 3, 1],
+								["eyes", 3, 0],
+								["eyes", 2, 5],
+								["eyes", 3, 0],
+								["eyes", 3, 1]
+							]
+						}
+					}]
+				},
+				{
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_010021",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 470, 90],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["eyes", 2, 3],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 1800,
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 2, 5],
+								["eyes", 2, 4],
+								["eyes", 2, 3],
+								["eyes", 2, 4],
+								["eyes", 2, 5]
+							]
+						}
+					}, {
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["mouth", 1, 1],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "mouth",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 0,
+							"plays": ["only"],
+							"cycle": [0],
+							"frame": [
+								["mouth", 0, 3]
+							]
+						}
+					}]
+				}
+			]
+		},
+		"main_04": {
+			"type": "renderer",
+			"label": ["log"],
+			"next": {
+				"type": "scene",
+				"mode": "end",
+				"console": "yes",
+				"to": "@this*main_05"
+			},
+			"dialog": {
+				"title": "@common#Rt38581044",
+				"text": "#Xx70859302",
+				"sleep": 800,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_02",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "dlc",
+				"res": "cc000094",
+				"sleep": 300
+			}],
+			"scene": [{
+					"type": "block",
+					"sleep": 0,
+					"res": "#000000",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "image",
+					"sleep": 0,
+					"path": "backgrounds",
+					"res": "bg01a",
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					}
+				}, {
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/chino",
+					"res": "chino_090013",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 300, 100],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/chino",
+						"res": "chino_090013",
+						"block": ["eyes", 2, 5],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 3, 1],
+								["eyes", 3, 0],
+								["eyes", 2, 5],
+								["eyes", 3, 0],
+								["eyes", 3, 1]
+							]
+						}
+					}]
+				},
+				{
+					"type": "sprite",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_010021",
+					"block": ["character", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 470, 90],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"children": [{
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["eyes", 2, 3],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "eyes",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 1800,
+							"plays": ["loop"],
+							"cycle": [0, 5000],
+							"frame": [
+								["eyes", 2, 5],
+								["eyes", 2, 4],
+								["eyes", 2, 3],
+								["eyes", 2, 4],
+								["eyes", 2, 5]
+							]
+						}
+					}, {
+						"type": "frame",
+						"sleep": 0,
+						"path": "character/cocoa",
+						"res": "cocoa_010021",
+						"block": ["mouth", 1, 1],
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [0, 0, 0, 0],
+						"cover": "source-over",
+						"childrenCover": "source-over",
+						"parent": "mouth",
+						"transition": {
+							"start": [],
+							"end": []
+						},
+						"animation": {
+							"sleep": 0,
+							"plays": ["only"],
+							"cycle": [0],
+							"frame": [
+								["mouth", 0, 3]
+							]
+						}
+					}]
+				}, {
+					"type": "block",
+					"sleep": 0,
+					"res": "#000000",
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"transition": {
+						"start": [],
+						"end": [{
+							"sleep": 0,
+							"duration": 200,
+							"alpha": 1.0,
+							"rotate": 0,
+							"position": [960, 544, 0, 0]
+						}]
+					}
+				}
+			]
+		}
+	}
+}

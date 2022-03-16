@@ -1,0 +1,11 @@
+{
+	"name": "各自的烦恼",
+	"describe": "各自的烦恼-2022拜年祭创意工坊剧情，还原了没有被动画化的蛀牙篇",
+	"author": "ski little",
+	"scenes": "dlc_a01",
+	"outputSize": [960, 544],
+	"renderSize": [960, 544],
+	"fps": 30,
+	"quality": 1,
+	"version": "0.0.1"
+}

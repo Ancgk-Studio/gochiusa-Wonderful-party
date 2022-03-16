@@ -1,0 +1,1667 @@
+{
+	"tuto_base": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "select",
+			"console": "no",
+			"sleep": 1000,
+			"select": [{
+				"title": "浏览游戏指南",
+				"to": "tuto_01"
+			}, {
+				"title": "跳过游戏指南",
+				"to": "main_01"
+			}]
+		},
+		"dialog": {
+			"text": "需要浏览游戏指南吗？",
+			"sleep": 500,
+			"display": false
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "block",
+			"sleep": 0,
+			"res": "#000000",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": []
+			}
+		}]
+	},
+	"tuto_01": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_02"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "那么，接下来就来介绍一下游戏说明吧。",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 500,
+			"loop": true
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1000",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_01",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"tuto_02": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_03"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "游戏中你将扮演心爱，\n与朋友们亲密愉快地度过每一天。",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1001",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_02",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"tuto_03": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_04"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "故事中的选择项以及休息日在目的地的邂逅，\n可以提升智乃和理世她们的“亲密度”。",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1002",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_03",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"tuto_04": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_05"
+		},
+		"dialog": {
+			"text": "（过了智乃的生日后，\n将会进入亲密度达到9星以上的角色的个人路线）",
+			"sleep": 500,
+			"display": true
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_04",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": []
+			}
+		}]
+	},
+	"tuto_05": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_06"
+		},
+		"dialog": {
+			"text": "（不过，个人路线存在优先级别）",
+			"sleep": 500,
+			"display": true
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_04",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}]
+	},
+	"tuto_06": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_07"
+		},
+		"dialog": {
+			"text": "（优先级按照智乃、理世、千夜、纱路\n的顺序进行，请务必注意）",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_04",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"tuto_07": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_08"
+		},
+		"dialog": {
+			"text": "（在个人路线中\n“友情值”将代替“亲密度”进行累积）",
+			"sleep": 500,
+			"display": true
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_05",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": []
+			}
+		}]
+	},
+	"tuto_08": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_09"
+		},
+		"dialog": {
+			"text": "（故事结局会随着“友情值”\n的分量而发生变化。）",
+			"sleep": 500,
+			"display": true
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_05",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}]
+	},
+	"tuto_09": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_10"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "不光是特定的个人路线，\n根据Rabbit House的工作情况",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1006",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_05",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}]
+	},
+	"tuto_10": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_11"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "还可以进入“大家一起度过的故事”。",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1007",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_05",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"tuto_11": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "tuto_12"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "详细内容还是等到Rabbit House打工的时候\n再讲解吧。",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1008",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_06",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"tuto_12": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_01"
+		},
+		"dialog": {
+			"title": "智乃的父亲",
+			"text": "那么心爱，今后请多多关照智乃。",
+			"sleep": 500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_18",
+			"sleep": 0,
+			"loop": true,
+			"end": "stop"
+		},
+		"voice": {
+			"path": "takahiro",
+			"res": "tazt1009",
+			"sleep": 500
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_base",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "tuto",
+			"res": "tuto_01",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [960, 544, 0, 0]
+				}]
+			}
+		}]
+	},
+	"main_01": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_02"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "这里是木结构房屋与石板路的小镇",
+			"sleep": 1500,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 800,
+			"loop": true
+		},
+		"voice": {
+			"path": "cocoa",
+			"res": "cc0a1000",
+			"sleep": 1500
+		},
+		"scene": [{
+			"type": "block",
+			"sleep": 0,
+			"res": "#000000",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 1000,
+			"path": "backgrounds",
+			"res": "bg18a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 1000,
+					"duration": 400,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}]
+			}
+		}]
+	},
+	"main_02": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_03"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "我心爱，因为考上了这个小镇的高中，\n所以从春天开始就搬到这边住了。",
+			"sleep": 800,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "cocoa",
+			"res": "cc0a1001",
+			"sleep": 800
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg13a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 400,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}]
+			}
+		}]
+	},
+	"main_03": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_04"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "在寄宿的咖啡店Rabbit House里一边麻利地工作，\n一边过着充实的每一天。",
+			"sleep": 800,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "cocoa",
+			"res": "cc0a1002",
+			"sleep": 800
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg02a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 400,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}]
+			}
+		}]
+	},
+	"main_04": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_05"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "与各种各样的人相遇，交到了许多的朋友，\n也完全融入了小镇的氛围中——",
+			"sleep": 800,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "cocoa",
+			"res": "cc0a1003",
+			"sleep": 800
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg16a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 400,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}]
+			}
+		}]
+	},
+	"main_05": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_06"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "不知不觉间，\n已经到了秋风习习，带点清凉感的季节。",
+			"sleep": 800,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "cocoa",
+			"res": "cc0a1004",
+			"sleep": 800
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg15a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 400,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}]
+			}
+		}]
+	},
+	"main_06": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_07"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "这是我在这个小镇里迎接的第一个冬天。\n今天会有什么事情在等待着我呢？真是令人期待呀！",
+			"sleep": 800,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"voice": {
+			"path": "cocoa",
+			"res": "cc0a1005",
+			"sleep": 800
+		},
+		"scene": [{
+			"type": "block",
+			"sleep": 0,
+			"res": "#000000",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg20a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 800,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}]
+			}
+		}]
+	},
+	"main_07": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_08"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "（嗯～～，今天的课上完了！）",
+			"sleep": 1600,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "block",
+			"sleep": 0,
+			"res": "#000000",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [960, 544, 0, 0],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "image",
+			"sleep": 800,
+			"path": "backgrounds",
+			"res": "bg17a",
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 1600,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [1060, 644, -50, -50]
+				}],
+				"end": []
+			}
+		}, {
+			"type": "sprite",
+			"sleep": 1800,
+			"path": "character/cocoa",
+			"res": "cocoa_000012",
+			"block": ["character", 0, 0],
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [389, 552, 340, 90],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 300,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [389, 552, 330, 90]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 50,
+					"alpha": 0.99,
+					"rotate": 0,
+					"position": [389, 552, 330, 90]
+				}]
+			},
+			"children": [{
+					"type": "frame",
+					"sleep": 1800,
+					"path": "character/cocoa",
+					"res": "cocoa_000012",
+					"block": ["eyes", 2, 4],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "eyes",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["loop"],
+						"cycle": [0, 5000],
+						"frame": [
+							["eyes", 2, 3],
+							["eyes", 2, 2],
+							["eyes", 2, 4]
+						]
+					}
+				},
+				{
+					"type": "frame",
+					"sleep": 1800,
+					"path": "character/cocoa",
+					"res": "cocoa_000012",
+					"block": ["mouth", 0, 15],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "mouth",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["only"],
+						"cycle": [0],
+						"frame": [
+							["mouth", 0, 15]
+						]
+					}
+				}
+			]
+		}]
+	},
+	"main_08": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_09"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "（那么，得早点回去才行。\n今天可是工作日，而且——）",
+			"sleep": 400,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg17a",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "sprite",
+			"sleep": 0,
+			"path": "character/cocoa",
+			"res": "cocoa_000012",
+			"block": ["character", 0, 0],
+			"alpha": 0.99,
+			"rotate": 0,
+			"position": [389, 552, 330, 90],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 50,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [389, 552, 330, 90]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 100,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [389, 552, 330, 90]
+				}]
+			},
+			"children": [{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_000012",
+					"block": ["eyes", 3, 1],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "eyes",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["loop"],
+						"cycle": [0, 5000],
+						"frame": [
+							["eyes", 2, 5],
+							["eyes", 3, 3],
+							["eyes", 3, 1]
+						]
+					}
+				},
+				{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_000012",
+					"block": ["mouth", 0, 3],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "mouth",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["only"],
+						"cycle": [0],
+						"frame": [
+							["mouth", 0, 3]
+						]
+					}
+				}
+			]
+		}]
+	},
+	"main_09": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_10"
+		},
+		"dialog": {
+			"title": "心爱",
+			"text": "（还有可爱的妹妹在等着我呢！）",
+			"sleep": 400,
+			"display": false
+		},
+		"bgm": {
+			"res": "bgm_01",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg17a",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "sprite",
+			"sleep": 0,
+			"path": "character/cocoa",
+			"res": "cocoa_000011",
+			"block": ["character", 0, 0],
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [217, 553, 370, 94],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 100,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [217, 553, 370, 94]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 100,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [217, 553, 370, 94]
+				}]
+			},
+			"children": [{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_000011",
+					"block": ["eyes", 3, 1],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "eyes",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["only"],
+						"cycle": [0],
+						"frame": [
+							["eyes", 3, 1]
+						]
+					}
+				},
+				{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_000011",
+					"block": ["mouth", 0, 3],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "mouth",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["only"],
+						"cycle": [0],
+						"frame": [
+							["mouth", 0, 3]
+						]
+					}
+				}
+			]
+		}]
+	},
+	"main_10": {
+		"type": "renderer",
+		"next": {
+			"type": "scene",
+			"mode": "default",
+			"console": "yes",
+			"to": "main_11"
+		},
+		"dialog": {
+			"title": "千夜",
+			"text": "哎呀？\n心爱你笑眯眯的，是有了好事情吗？",
+			"sleep": 400,
+			"display": false
+		},
+		"voice": {
+			"path": "chiya",
+			"res": "cy0a1000",
+			"sleep": 400
+		},
+		"bgm": {
+			"res": "bgm_05",
+			"sleep": 0,
+			"loop": true
+		},
+		"scene": [{
+			"type": "image",
+			"sleep": 0,
+			"path": "backgrounds",
+			"res": "bg17a",
+			"alpha": 1.0,
+			"rotate": 0,
+			"position": [1060, 644, -50, -50],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [],
+				"end": []
+			}
+		}, {
+			"type": "sprite",
+			"sleep": 0,
+			"path": "character/cocoa",
+			"res": "cocoa_000011",
+			"block": ["character", 0, 0],
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [217, 553, 590, 94],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 200,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [217, 553, 580, 94]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 100,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [217, 553, 370, 94]
+				}]
+			},
+			"children": [{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_000011",
+					"block": ["eyes", 3, 1],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "eyes",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["only"],
+						"cycle": [0],
+						"frame": [
+							["eyes", 3, 1]
+						]
+					}
+				},
+				{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/cocoa",
+					"res": "cocoa_000011",
+					"block": ["mouth", 0, 3],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "mouth",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["only"],
+						"cycle": [0],
+						"frame": [
+							["mouth", 0, 3]
+						]
+					}
+				}
+			]
+		}, {
+			"type": "sprite",
+			"sleep": 0,
+			"path": "character/chiya",
+			"res": "chiya_000014",
+			"block": ["character", 0, 0],
+			"alpha": 0.0,
+			"rotate": 0,
+			"position": [367, 579, 92, 65],
+			"cover": "source-over",
+			"childrenCover": "source-over",
+			"transition": {
+				"start": [{
+					"sleep": 0,
+					"duration": 200,
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [367, 579, 82, 65]
+				}],
+				"end": [{
+					"sleep": 0,
+					"duration": 100,
+					"alpha": 0.0,
+					"rotate": 0,
+					"position": [367, 579, 82, 65]
+				}]
+			},
+			"children": [{
+					"type": "frame",
+					"sleep": 0,
+					"path": "character/chiya",
+					"res": "chiya_000014",
+					"block": ["eyes", 2, 2],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "eyes",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": ["loop"],
+						"cycle": [0, 5000],
+						"frame": [
+							["eyes", 2, 0],
+							["eyes", 2, 1],
+							["eyes", 2, 2]
+						]
+					}
+				},
+				{
+					"type": "frame",
+					"sleep": 800,
+					"path": "character/chiya",
+					"res": "chiya_000014",
+					"block": ["mouth", 0, 0],
+					"alpha": 1.0,
+					"rotate": 0,
+					"position": [0, 0, 0, 0],
+					"cover": "source-over",
+					"childrenCover": "source-over",
+					"parent": "mouth",
+					"transition": {
+						"start": [],
+						"end": []
+					},
+					"animation": {
+						"plays": [4],
+						"cycle": [0],
+						"frame": [
+							["mouth", 0, 0],
+							["mouth", 0, 15],
+							["mouth", 0, 15],
+							["mouth", 0, 16],
+							["mouth", 0, 16],
+							["mouth", 0, 15],
+							["mouth", 0, 16],
+							["mouth", 0, 16],
+							["mouth", 0, 15],
+							["mouth", 0, 15],
+							["mouth", 0, 16],
+							["mouth", 0, 16],
+							["mouth", 0, 15],
+							["mouth", 0, 15],
+							["mouth", 0, 16],
+							["mouth", 0, 16],
+							["mouth", 0, 16],
+							["mouth", 0, 15],
+							["mouth", 0, 0]
+						]
+					}
+				}
+			]
+		}]
+	}
+
+}

@@ -1,0 +1,809 @@
+{
+	"uuid": "6471CC5F-B91A-4E02-AE57-F4A8338FC8ED",
+	"name": "tutorial_01",
+	"version": "2021-9-24",
+	"describe": "开始教程部分内容",
+	"story": {
+		"tuto_base": {
+			"type": "renderer",
+			"label": ["log"],
+			"next": {
+				"type": "scene",
+				"mode": "select",
+				"console": "yes",
+				"sleep": 1000,
+				"select": [{
+					"title": "#Rr81747197",
+					"to": "@this*tuto_01"
+				}, {
+					"title": "#Xa29393085",
+					"to": "@main_a01*main_01"
+				}]
+			},
+			"dialog": {
+				"text": "#Pz12747912",
+				"sleep": 500,
+				"display": false
+			},
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "block",
+				"sleep": 0,
+				"res": "#000000",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": []
+				}
+			}]
+		},
+		"tuto_01": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_02"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Ob73660838",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 500,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1000",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_01",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		},
+		"tuto_02": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_03"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Gy39513314",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1001",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_02",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		},
+		"tuto_03": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_04"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Nx44767289",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1002",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_03",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		},
+		"tuto_04": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_05"
+			},
+			"dialog": {
+				"text": "#Ve43312982",
+				"sleep": 500,
+				"display": true
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_04",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": []
+				}
+			}]
+		},
+		"tuto_05": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_06"
+			},
+			"dialog": {
+				"text": "#Zq14328933",
+				"sleep": 500,
+				"display": true
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_04",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}]
+		},
+		"tuto_06": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_07"
+			},
+			"dialog": {
+				"text": "#Ib55613462",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_04",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		},
+		"tuto_07": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_08"
+			},
+			"dialog": {
+				"text": "#Wz88105824",
+				"sleep": 500,
+				"display": true
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_05",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": []
+				}
+			}]
+		},
+		"tuto_08": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_09"
+			},
+			"dialog": {
+				"text": "#Tt94148970",
+				"sleep": 500,
+				"display": true
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_05",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}]
+		},
+		"tuto_09": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_10"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Cu83923988",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1006",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_05",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}]
+		},
+		"tuto_10": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_11"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Lz58684378",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1007",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_05",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		},
+		"tuto_11": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@this*tuto_12"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Fe66799514",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1008",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_06",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		},
+		"tuto_12": {
+			"type": "renderer",
+			"label": ["list"],
+			"next": {
+				"type": "scene",
+				"mode": "default",
+				"console": "yes",
+				"to": "@main_a01*main_01"
+			},
+			"dialog": {
+				"title": "@common#Se49054103",
+				"text": "#Gn26679901",
+				"sleep": 500,
+				"display": false
+			},
+			"audio": [{
+				"type": "bgm",
+				"channel": "bgm_a",
+				"res": "bgm_18",
+				"sleep": 0,
+				"loop": true
+			}, {
+				"type": "voice",
+				"channel": "voice_a",
+				"path": "takahiro",
+				"res": "tazt1009",
+				"sleep": 500
+			}],
+			"scene": [{
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_base",
+				"alpha": 1.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [],
+					"end": []
+				}
+			}, {
+				"type": "image",
+				"sleep": 0,
+				"path": "tuto",
+				"res": "tuto_01",
+				"alpha": 0.0,
+				"rotate": 0,
+				"position": [960, 544, 0, 0],
+				"cover": "source-over",
+				"childrenCover": "source-over",
+				"transition": {
+					"start": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 1.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}],
+					"end": [{
+						"sleep": 0,
+						"duration": 300,
+						"alpha": 0.0,
+						"rotate": 0,
+						"position": [960, 544, 0, 0]
+					}]
+				}
+			}]
+		}
+	}
+}
